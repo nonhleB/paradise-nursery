@@ -1,16 +1,44 @@
-# React + Vite
+# Paradise Nursery
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Paradise Nursery is a React-based e-commerce shopping cart application for an online plant shop. Users can browse houseplants organized by category, view details such as images, names, descriptions, and prices, add plants to a shopping cart, and manage cart items — adjusting quantities, removing items, and viewing the total cost in real time.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Landing page with company branding and a "Get Started" button
+- About Us page describing the company
+- Product listing page with plants grouped into categories
+- Add to Cart functionality with live cart count updates
+- Shopping cart page with quantity controls, item removal, and total cost calculation
+- Responsive navigation bar across all pages
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (Vite)
+- Redux Toolkit (state management)
+- React Router (page navigation)
+- CSS
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+\`\`\`bash
+npm install
+npm run dev
+\`\`\`
+
+## Project Structure
+
+\`\`\`
+src/
+  components/
+    Landing.jsx
+    AboutUs.jsx
+    ProductList.jsx
+    CartItem.jsx
+    Navbar.jsx
+  redux/
+    CartSlice.jsx
+    store.js
+  App.jsx
+  App.css
+  main.jsx
+\`\`\`
